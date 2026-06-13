@@ -34,6 +34,8 @@
             border-collapse: collapse;
             font-family:verdana;
             font-size: 16px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         th, td {
             background-color: rgb(30, 35, 40);  
@@ -44,6 +46,7 @@
         .odhaleni { color:rgb(235, 160, 160); }
         .vyzkum { color:rgb(160, 235, 160); }
         .zaklad { color:rgb(200, 200, 200); }
+        .zakladmale { color:rgb(200, 200, 200); font-size: 13px; }
 
         tr:hover {
             background-color: rgb(200, 200, 200);
@@ -80,7 +83,7 @@
     <div class="filter-container">
         <label class="zaklad" for="globalCategoryFilter">Filtrovat podle kategorie:</label>
         <select id="globalCategoryFilter" onchange="filterAllTables()">
-            <option value="all">All Categories</option>
+            <option value="all">Všechny kategorie</option>
             <option value="Hospodářství">Hospodářství</option>
             <option value="Tržiště a suroviny">Tržiště a suroviny</option>
             <option value="Jednotky a vlastnosti">Jednotky a vlastnosti</option>
@@ -103,7 +106,7 @@
                     <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td class="zaklad">
+                    <td class="zakladmale">
                         <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                     </td>
                     <td class="odhaleni">4.000</td>
@@ -114,7 +117,7 @@
                     </td>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td class="zaklad">
+                    <td class="zakladmale">
                         <img src="Images UNI/sell_stone_6.gif" alt="Image">Kámen za 6
                     </td>
                     <td class="odhaleni">4.000</td>
@@ -125,7 +128,7 @@
                     </td>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td class="zaklad">
+                    <td class="zakladmale">
                         <img src="Images UNI/sell_iron_6.gif" alt="Image">Železo za 6
                     </td>
                     <td class="odhaleni">4.000</td>
@@ -133,11 +136,31 @@
                     <td class="zaklad">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
                     <td class="zaklad">
                         <span class="badge trziste">Tržiště a suroviny</span>
-                        <span class="badge valka">Válčení a obrana</span>
                     </td>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/mine_stone.gif" alt="Image">Pila na kamenolom
+                    </td>
+                    <td class="odhaleni">6.000</td>
+                    <td class="vyzkum">30.000</td>
+                    <td class="zaklad">Umožní přestavět samostatně stojící pilu na hradové mapě na Kamenolom</td>
                     <td class="zaklad">
+                        <span class=""></span>
+                    </td>
+                    <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/buy_wood_10.gif" alt="Image">Dřevo za 10
+                    </td>
+                    <td class="odhaleni">10.000</td>
+                    <td class="vyzkum">50.000</td>
+                    <td class="zaklad">Na tržišti jde koupit dřevo s výhodným kurzem jedno dřevo za 10 zlatých</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
                         <img src="Images UNI/lecitel_3H.gif" alt="Image">Léčitel 3H
                     </td>
                     <td class="odhaleni">6.000</td>
@@ -145,7 +168,72 @@
                     <td class="zaklad">Léčitel v kostele má po najmutí hodnost 3</td>
                     <td class="zaklad">
                         <span class="badge jednotky">Jednotky a vlastnosti</span>
-                        <span class="badge hospodarstvi">Hospodářství</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/kamenolom.gif" alt="Image">Kamenolom IV.
+                    </td>
+                    <td class="odhaleni">12.000</td>
+                    <td class="vyzkum">60.000</td>
+                    <td class="zaklad">Umožní vylepšovat kamenolomy na 4. level. Produkce je 6 kamene a hromada 8000</td>
+                    <td class="zaklad">
+                        <span class=""></span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/sermir_1.gif" alt="Image">Šermíř 1H
+                    </td>
+                    <td class="odhaleni">12.000</td>
+                    <td class="vyzkum">60.000</td>
+                    <td class="zaklad">Šermíř z kasáren bude mít po naverbování hodnost o +1 vyšší</td>
+                    <td class="zaklad">
+                        <span class="badge jednotky">Jednotky a vlastnosti</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/trziste_10000.gif" alt="Image">Tržiště +10K
+                    </td>
+                    <td class="odhaleni">14.000</td>
+                    <td class="vyzkum">70.000</td>
+                    <td class="zaklad">Zvýší limit obchodování na tržištích o +10.000 zlatých</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/dul_na_zelezo.gif" alt="Image">Železný důl IV.
+                    </td>
+                    <td class="odhaleni">14.000</td>
+                    <td class="vyzkum">70.000</td>
+                    <td class="zaklad">Umožní vylepšovat železný důl na 4. level. Produkce je 6 železa a hromada 8000</td>
+                    <td class="zaklad">
+                        <span class=""></span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/zbrojnos_2.gif" alt="Image">Zbrojnoš +2H
+                    </td>
+                    <td class="odhaleni">20.000</td>
+                    <td class="vyzkum">100.000</td>
+                    <td class="zaklad">Zbrojnoš z kasáren bude mít po naverbování hodnost o +2 vyšší</td>
+                    <td class="zaklad">
+                        <span class="badge jednotky">Jednotky a vlastnosti</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zakladmale">
+                        <img src="Images UNI/uplaceni_2.gif" alt="Image">Úplatkář II.
+                    </td>
+                    <td class="odhaleni">60.000</td>
+                    <td class="vyzkum">300.000</td>
+                    <td class="zaklad">Zvýší šanci na uplacení všechjednotek o +20%. Za více vyzkoumaných levelů se procenta sčítají</td>
+                    <td class="zaklad">
+                        <span class=""></span>
                     </td>
                 </tr>
             </table>
@@ -157,7 +245,7 @@
     <section>
         <div class="table-section">
             <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 2</h2>
-            
+
             <table width="1500" align="center" class="filterable-table">
                 <tr bgcolor="grey" style="border: 1.5px solid white;">
                     <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
@@ -167,32 +255,15 @@
                     <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    <td class="zakladmale">
+                        <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <span class="badge jednotky">Jednotky a vlastnosti</span>
-                    </td>
-                </tr>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
-                    </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
                 </tr>
             </table>
         </div>
@@ -203,7 +274,7 @@
     <section>
         <div class="table-section">
             <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 3</h2>
-            
+
             <table width="1500" align="center" class="filterable-table">
                 <tr bgcolor="grey" style="border: 1.5px solid white;">
                     <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
@@ -213,30 +284,15 @@
                     <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    <td class="zakladmale">
+                        <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                </tr>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
-                    </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
                 </tr>
             </table>
         </div>
@@ -247,7 +303,7 @@
     <section>
         <div class="table-section">
             <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 4</h2>
-            
+
             <table width="1500" align="center" class="filterable-table">
                 <tr bgcolor="grey" style="border: 1.5px solid white;">
                     <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
@@ -257,30 +313,15 @@
                     <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    <td class="zakladmale">
+                        <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                </tr>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
-                    </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
                 </tr>
             </table>
         </div>
@@ -291,7 +332,7 @@
     <section>
         <div class="table-section">
             <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 5</h2>
-            
+
             <table width="1500" align="center" class="filterable-table">
                 <tr bgcolor="grey" style="border: 1.5px solid white;">
                     <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
@@ -301,30 +342,15 @@
                     <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                 </tr>
                 <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    <td class="zakladmale">
+                        <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
                     </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
-                </tr>
-                <tr align="center" style="border: 1px solid gray;">
-                    <td height="30" style="color:rgb(200, 200, 200);">
-                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
-                    </td>
-                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
-                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
-                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
                 </tr>
             </table>
         </div>
