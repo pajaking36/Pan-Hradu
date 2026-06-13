@@ -1,8 +1,371 @@
 <!DOCTYPE html>
-<html>
-</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univerzita PH</title>
+    <style type="text/css">
+        body{
+            background-color: rgb(30, 35, 40);
+        }
+        .filter-container {
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 6px;
+            display: inline-block;
+        }
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        select {
+            padding: 8px 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .table-section {
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            font-family:verdana;
+            font-size: 16px;
+        }
+        th, td {
+            background-color: rgb(30, 35, 40);  
+        }
+        td {
+            height:100px;
+        }
+        .odhaleni { color:rgb(235, 160, 160); }
+        .vyzkum { color:rgb(160, 235, 160); }
+        .zaklad { color:rgb(200, 200, 200); }
 
-<img src="Images/Odmeny_PH_S5.png" alt="Kreditove odmeny na S5 60.vek" width="654" height="644">
+        tr:hover {
+            background-color: rgb(200, 200, 200);
+        }
+        section{
+            margin-bottom: 100px;
+        }
+        /* Styl pro štítky kategorií */
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            margin-right: 5px;
+            margin-bottom: 2px;
+        }
+        .hospodarstvi { background-color: rgb(80, 90, 80); }
+        .trziste { background-color: rgb(130, 70, 30); }
+        .jednotky { background-color: rgb(60, 70, 90); }
+        .valka { background-color: rgb(90, 30, 30); }
+    </style>
+</head>
+<body>
+    
+    <h1 align="center" style="color:rgb(250, 250, 0); font-size: 50px;">UNIVERZITA</h1>
+    <hr>
+
+    
+    <p1 align="center" style="color:rgb(200, 200, 200); font-size: 20px; margin-left: 10%"></p1>
+
+    <!-- Filter for all tables -->
+    <div class="filter-container">
+        <label class="zaklad" for="globalCategoryFilter">Filtrovat podle kategorie:</label>
+        <select id="globalCategoryFilter" onchange="filterAllTables()">
+            <option value="all">All Categories</option>
+            <option value="Hospodářství">Hospodářství</option>
+            <option value="Tržiště a suroviny">Tržiště a suroviny</option>
+            <option value="Jednotky a vlastnosti">Jednotky a vlastnosti</option>
+            <option value="Válčení a obrana">Válčení a obrana</option>
+        </select>
+    </div>
+
+
+    <!-- UNIVERZITA LEVEL 1 -->
+    <section>
+        <div class="table-section">
+            <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 1</h2>
+
+            <table width="1500" align="center" class="filterable-table">
+                <tr bgcolor="grey" style="border: 1.5px solid white;">
+                    <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
+                    <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
+                    <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
+                    <th width="850" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
+                    <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zaklad">
+                        <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
+                    </td>
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zaklad">
+                        <img src="Images UNI/sell_stone_6.gif" alt="Image">Kámen za 6
+                    </td>
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zaklad">
+                        <img src="Images UNI/sell_iron_6.gif" alt="Image">Železo za 6
+                    </td>
+                    <td class="odhaleni">4.000</td>
+                    <td class="vyzkum">20.000</td>
+                    <td class="zaklad">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
+                    <td class="zaklad">
+                        <span class="badge trziste">Tržiště a suroviny</span>
+                        <span class="badge valka">Válčení a obrana</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td class="zaklad">
+                        <img src="Images UNI/lecitel_3H.gif" alt="Image">Léčitel 3H
+                    </td>
+                    <td class="odhaleni">6.000</td>
+                    <td class="vyzkum">30.000</td>
+                    <td class="zaklad">Léčitel v kostele má po najmutí hodnost 3</td>
+                    <td class="zaklad">
+                        <span class="badge jednotky">Jednotky a vlastnosti</span>
+                        <span class="badge hospodarstvi">Hospodářství</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- UNIVERZITA LEVEL 2 -->
+    <section>
+        <div class="table-section">
+            <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 2</h2>
+            
+            <table width="1500" align="center" class="filterable-table">
+                <tr bgcolor="grey" style="border: 1.5px solid white;">
+                    <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
+                    <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
+                    <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
+                    <th width="850" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
+                    <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <span class="badge jednotky">Jednotky a vlastnosti</span>
+                    </td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    
+
+    <!-- UNIVERZITA LEVEL 3 -->
+    <section>
+        <div class="table-section">
+            <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 3</h2>
+            
+            <table width="1500" align="center" class="filterable-table">
+                <tr bgcolor="grey" style="border: 1.5px solid white;">
+                    <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
+                    <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
+                    <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
+                    <th width="850" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
+                    <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- UNIVERZITA LEVEL 4 -->
+    <section>
+        <div class="table-section">
+            <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 4</h2>
+            
+            <table width="1500" align="center" class="filterable-table">
+                <tr bgcolor="grey" style="border: 1.5px solid white;">
+                    <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
+                    <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
+                    <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
+                    <th width="850" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
+                    <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- UNIVERZITA LEVEL 5 -->
+    <section>
+        <div class="table-section">
+            <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 5</h2>
+            
+            <table width="1500" align="center" class="filterable-table">
+                <tr bgcolor="grey" style="border: 1.5px solid white;">
+                    <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
+                    <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
+                    <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
+                    <th width="850" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
+                    <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_wood_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat dřevo s výhodným kurzem 6 zlatých za jedno dřevo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_stone_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat kámen s výhodným kurzem 6 zlatých za jeden kámen</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+                <tr align="center" style="border: 1px solid gray;">
+                    <td height="30" style="color:rgb(200, 200, 200);">
+                        <img src="Images for table UNI 1/sell_iron_6.gif" alt="Image">
+                    </td>
+                    <td height="30" style="color:rgb(235, 160, 160);">4.000</td>
+                    <td height="30" style="color:rgb(160, 235, 160);">20.000</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Na tržišti jde prodat železo s výhodným kurzem 6 zlatých za jedno železo</td>
+                    <td height="30" style="color:rgb(200, 200, 200);">Tržiště a suroviny</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <!-- Script for filtering all tables -->
+    <script>
+        function filterAllTables() {
+            // Získání vybrané hodnoty z filtru
+            const filterValue = document.getElementById("globalCategoryFilter").value.toLowerCase();
+            
+            // Výběr všech tabulek, které mají třídu "filterable-table"
+            const tables = document.querySelectorAll(".filterable-table");
+
+            // Procházení každé tabulky zvlášť
+            tables.forEach(table => {
+                const tbody = table.querySelector("tbody");
+                const rows = tbody.getElementsByTagName("tr");
+
+                // Procházení všech řádků v aktuální tabulce
+                for (let i = 0; i < rows.length; i++) {
+                    const row = rows[i];
+                    const cells = row.getElementsByTagName("td");
+                    
+                    if (cells.length > 0) {
+                        // Výběr úplně posledního sloupce (index se dynamicky přizpůsobí počtu sloupců)
+                        const lastCell = cells[cells.length - 1];
+                        const cellText = (lastCell.textContent || lastCell.innerText).toLowerCase();
+
+                        // Podmínka pro zobrazení nebo skrytí řádku
+                        if (filterValue === "all" || cellText.includes(filterValue)) {
+                            row.style.display = "";
+                        } else {
+                            row.style.display = "none";
+                        }
+                    }
+                }
+            });
+        }
+    </script>
 
 
 </body>
