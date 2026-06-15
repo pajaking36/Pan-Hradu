@@ -16,7 +16,7 @@
 
 
         <!-- Nadpis UNIVBERZITA -->
-        <h1 align="center" style="color:rgb(250, 250, 0); font-size: 50px;">UNIVERZITA</h1>
+        <h1 id="univerzita" align="center" style="color:rgb(250, 250, 0); font-size: 50px;">UNIVERZITA</h1>
         <hr>
 
 
@@ -52,9 +52,9 @@
 
 
 
-
+        <hr>
         <!-- Filter kategorií -->
-        <div class="filter-container">
+        <div class="filter-container-dark">
             <label class="zaklad" for="globalCategoryFilter">Filtrovat podle kategorie:</label>
             <select id="globalCategoryFilter" onchange="filterAllTables()">
                 <option value="all">Všechny kategorie</option>
@@ -67,11 +67,24 @@
 
 
 
+        <!-- Tlačítka na přesun mezi levely univerzity-->
+        <div class="filter-container">
+            <button id="button-uni-level-1" class="button-uni-lvl">Univerzita level 1</button>
+            <button id="button-uni-level-2" class="button-uni-lvl">Univerzita level 2</button>
+            <button id="button-uni-level-3" class="button-uni-lvl">Univerzita level 3</button>
+            <button id="button-uni-level-4" class="button-uni-lvl">Univerzita level 4</button>
+            <button id="button-uni-level-5" class="button-uni-lvl">Univerzita level 5</button>
+        </div>
+        <hr>
+        <br>
+        <br>
+
+
 
         <!-- UNIVERZITA LEVEL 1 -->
         <section>
             <div class="table-section">
-                <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 1</h2>
+                <h2 id="univerzita-level-1" class="nadpis-univerzita">UNIVERZITA LEVEL 1</h2>
 
                 <table width="1500" align="center" class="filterable-table">
                     <tr bgcolor="grey" style="border: 1.5px solid white;">
@@ -336,13 +349,19 @@
                     </tr>
                 </table>
             </div>
+            <!-- Tlačítko na přesun zpět-->
+            <div class="button-container-right">
+                <div class="filter-container">
+                    <button id="button-uni-back-1" class="button-uni-lvl">Zpět</button>
+                </div>
+            </div>
         </section>
 
 
         <!-- UNIVERZITA LEVEL 2 -->
         <section>
             <div class="table-section">
-                <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 2</h2>
+                <h2 id="univerzita-level-2" class="nadpis-univerzita">UNIVERZITA LEVEL 2</h2>
 
                 <table width="1500" align="center" class="filterable-table">
                     <tr bgcolor="grey" style="border: 1.5px solid white;">
@@ -629,13 +648,19 @@
                     </tr>
                 </table>
             </div>
+            <!-- Tlačítko na přesun zpět-->
+            <div class="button-container-right">
+                <div class="filter-container">
+                    <button id="button-uni-back-2" class="button-uni-lvl">Zpět</button>
+                </div>
+            </div>
         </section>
         
 
         <!-- UNIVERZITA LEVEL 3 -->
         <section>
             <div class="table-section">
-                <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 3</h2>
+                <h2 id="univerzita-level-3" class="nadpis-univerzita">UNIVERZITA LEVEL 3</h2>
 
                 <table width="1500" align="center" class="filterable-table">
                     <tr bgcolor="grey" style="border: 1.5px solid white;">
@@ -845,13 +870,19 @@
                     </tr>
                 </table>
             </div>
+            <!-- Tlačítko na přesun zpět-->
+            <div class="button-container-right">
+                <div class="filter-container">
+                    <button id="button-uni-back-3" class="button-uni-lvl">Zpět</button>
+                </div>
+            </div>
         </section>
 
 
         <!-- UNIVERZITA LEVEL 4 -->
         <section>
             <div class="table-section">
-                <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 4</h2>
+                <h2 id="univerzita-level-4" class="nadpis-univerzita">UNIVERZITA LEVEL 4</h2>
 
                 <table width="1500" align="center" class="filterable-table">
                     <tr bgcolor="grey" style="border: 1.5px solid white;">
@@ -995,13 +1026,19 @@
                     </tr>
                 </table>
             </div>
+            <!-- Tlačítko na přesun zpět-->
+            <div class="button-container-right">
+                <div class="filter-container">
+                    <button id="button-uni-back-4" class="button-uni-lvl">Zpět</button>
+                </div>
+            </div>
         </section>
 
 
         <!-- UNIVERZITA LEVEL 5 -->
         <section>
             <div class="table-section">
-                <h2 align="center" style="color:rgb(200, 200, 0); font-size: 30px;">UNIVERZITA LEVEL 5</h2>
+                <h2 id="univerzita-level-5" class="nadpis-univerzita">UNIVERZITA LEVEL 5</h2>
 
                 <table width="1500" align="center" class="filterable-table">
                     <tr bgcolor="grey" style="border: 1.5px solid white;">
@@ -1047,6 +1084,12 @@
                 </table>
             </div>
         </section>
+            <!-- Tlačítko na přesun zpět-->
+            <div class="button-container-right">
+                <div class="filter-container">
+                    <button id="button-uni-back-5" class="button-uni-lvl">Zpět</button>
+                </div>
+            </div>
     </div>
 
     <script src="script.js"></script>
