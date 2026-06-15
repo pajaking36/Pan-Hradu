@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(30, 35, 40);
+}
+p {
+display: block;
+width: 1450px;
+margin-left: auto;
+margin-right: auto; 
+font-size: 20px;
+color: rgb(200, 200, 200);
+}
+.container {
+    max-width: 1500px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
+    margin: 0 auto;    /* Vycentruje celý blok na střed stránky */
+    padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
+}
+.filter-container {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 6px;
+    display: inline-block;
+}
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.table-section {
+    margin-bottom: 40px;
+}
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    font-family:verdana;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+th, td {
+    background-color: rgb(30, 35, 40);  
+}
+td {
+    height:100px;
+}
+.odhaleni { color:rgb(235, 160, 160); }
+.vyzkum { color:rgb(160, 235, 160); }
+.zaklad { color:rgb(200, 200, 200); }
+.zakladmale { color:rgb(200, 200, 200); font-size: 13px;
+}
+tr:hover {
+    background-color: rgb(200, 200, 200);
+}
+section{
+    margin-bottom: 100px;
+}
+/* Styl pro štítky kategorií */
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+.hospodarstvi { background-color: rgb(80, 90, 80); }
+.trziste { background-color: rgb(130, 70, 30); }
+.jednotky { background-color: rgb(60, 70, 90); }
+.valka { background-color: rgb(90, 30, 30); }
