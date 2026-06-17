@@ -28,7 +28,8 @@
         <br>
         <br>
         <p>
-            Jelikož stránky Valyrie jsou na výzkum v univerzitě již zastaralé (ceny pár technologií se změnily, některé technologie se přesunuly na jiné levely, a hlavně přibylo pár nových), tak jsem se rozhodl vytvořit novou webovou stránku.
+            Jelikož stránky Valyrie jsou na výzkum v univerzitě už trochu zastaralé - ceny pár technologií se změnily, některé technologie se přesunuly na jiné levely, a hlavně přibylo několik nových.
+            Tak, protože jsem univerzitní blázínek, jsem se rozhodl vytvořit novou webovou stránku, která se soustředí na univerzitu v Pánovi Hradu. 
         </p>
         <p>
             Na této stránce jsou všechny technologie v univerzitě rozdělené do pěti tabulek podle levelu univerzity, ve které se nachází. U každé technologie je uveden její název, obrázek, cena odhalení, cena výzkumu, účinek a všechny kategorie, do kterých spadá. 
@@ -37,7 +38,7 @@
         </p>
         <p>
             Momentálně je stránka stále ve fázi vývoje, proto zde spousta technologií pořád chybí. Jestli chcete pomoct s doplněním chybějících technologií, zde je odkaz na krátký 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU01ygLvDYXs0f6i50rCOb9T3fRLaTO2EGRy7osHQldwFRkA/viewform?usp=dialog" class="maskovany-odkaz" style="color:rgb(120, 120, 0)">formulář</a>, 
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeU01ygLvDYXs0f6i50rCOb9T3fRLaTO2EGRy7osHQldwFRkA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="maskovany-odkaz">formulář</a>, 
             který můžete rychle a snadno vyplnit pokaždé, když vyzkoumáte nový vynález!
         </p>
         <p>
@@ -47,17 +48,16 @@
             <br>
             Pokud discord nemáte, přijímám také kontaktování přímo skrz hru na nick: <b style="color:rgb(120, 120, 0)">rucka</b>
         </p>
+
+
         <br>
-        <br>
-
-
-
+        <br id="uni-back">
         <hr>
         <!-- Filter kategorií -->
         <div class="filter-container-dark">
-            <label class="zaklad" for="globalCategoryFilter">Filtrovat podle kategorie:</label>
-            <select id="globalCategoryFilter" onchange="filterAllTables()">
-                <option value="all">Všechny kategorie</option>
+            <label class="zaklad" for="globalCategoryFilter" style="cursor: pointer;">Filtrovat podle kategorie:</label>
+            <select id="globalCategoryFilter" style="cursor: pointer;" onchange="filterAllTables()">
+                <option value="all" style="cursor: pointer;">Všechny kategorie</option>
                 <option value="Hospodářství">Hospodářství</option>
                 <option value="Tržiště a suroviny">Tržiště a suroviny</option>
                 <option value="Jednotky a vlastnosti">Jednotky a vlastnosti</option>
@@ -86,15 +86,15 @@
             <div class="table-section">
                 <h2 id="univerzita-level-1" class="nadpis-univerzita">UNIVERZITA LEVEL 1</h2>
 
-                <table width="1480" align="center" class="filterable-table">
-                    <tr bgcolor="grey" style="border: 1.5px solid white;">
+                <table class="filterable-table">
+                    <tr class="table-header">
                         <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
                         <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
                         <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
                         <th width="830" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
                         <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_wood_6.gif" alt="Image">Dřevo za 6
                         </td>
@@ -105,7 +105,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_stone_6.gif" alt="Image">Kámen za 6
                         </td>
@@ -116,7 +116,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_iron_6.gif" alt="Image">Železo za 6
                         </td>
@@ -127,7 +127,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/mine_stone.gif" alt="Image">Pila na kamenolom
                         </td>
@@ -138,7 +138,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/lecitel_3H.gif" alt="Image">Léčitel +3H
                         </td>
@@ -149,7 +149,18 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/buy_food_10.gif" alt="Image">Jídlo za 10
+                        </td>
+                        <td class="odhaleni">10.000</td>
+                        <td class="vyzkum">50.000</td>
+                        <td class="zaklad">Na tržišti jde koupit jídlo s kurzem jedno jídlo za 10 zlatých.</td>
+                        <td class="zaklad">
+                            <span class="badge trziste">Tržiště a suroviny</span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_wood_10.gif" alt="Image">Dřevo za 10
                         </td>
@@ -160,7 +171,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/kamenolom.gif" alt="Image">Kamenolom IV.
                         </td>
@@ -171,7 +182,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/strelec_1.gif" alt="Image">Střelec +1H
                         </td>
@@ -182,7 +193,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sermir_1.gif" alt="Image">Šermíř +1H
                         </td>
@@ -193,7 +204,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trziste_10000.gif" alt="Image">Tržiště +10K
                         </td>
@@ -204,7 +215,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_iron_10.gif" alt="Image">Železo za 10
                         </td>
@@ -215,7 +226,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/mrva.gif" alt="Image">Hnojení mrvou
                         </td>
@@ -226,7 +237,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/dul_na_zelezo.gif" alt="Image">Železný důl IV.
                         </td>
@@ -237,7 +248,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/researchcredit_1.gif" alt="Image">Placený výzkum I.
                         </td>
@@ -248,7 +259,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/pila.gif" alt="Image">Pila IV.
                         </td>
@@ -259,7 +270,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/repair_1.gif" alt="Image">Opraváři I.
                         </td>
@@ -270,7 +281,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/zbrojnos_2.gif" alt="Image">Zbrojnoš +2H
                         </td>
@@ -281,7 +292,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/pevnejsi_strechy.gif" alt="Image">Pevnější střechy
                         </td>
@@ -292,7 +303,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/cat_aim_1.gif" alt="Image">Přesný katapult I.
                         </td>
@@ -303,7 +314,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/strelec_2.gif" alt="Image">Střelec +2H
                         </td>
@@ -314,7 +325,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/cat_range_1.gif" alt="Image">Dostřel katapultů I.
                         </td>
@@ -325,7 +336,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/vykrm_prasat.gif" alt="Image">Výkrm prasat
                         </td>
@@ -336,7 +347,18 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/uplaceni_1.gif" alt="Image">Úplatkář I.
+                        </td>
+                        <td class="odhaleni">30.000</td>
+                        <td class="vyzkum">150.000</td>
+                        <td class="zaklad">Zvýší šanci na uplacení všech jednotek o +10%. Za více vyzkoumaných levelů se procenta sčítají.</td>
+                        <td class="zaklad">
+                            <span class=""></span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/uplaceni_2.gif" alt="Image">Úplatkář II.
                         </td>
@@ -363,15 +385,15 @@
             <div class="table-section">
                 <h2 id="univerzita-level-2" class="nadpis-univerzita">UNIVERZITA LEVEL 2</h2>
 
-                <table width="1480" align="center" class="filterable-table">
-                    <tr bgcolor="grey" style="border: 1.5px solid white;">
+                <table class="filterable-table">
+                    <tr class="table-header">
                         <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
                         <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
                         <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
                         <th width="830" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
                         <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/lecitel_3H.gif" alt="Image">Léčitel +3H
                         </td>
@@ -382,7 +404,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_wood_8.gif" alt="Image">Dřevo za 8
                         </td>
@@ -393,7 +415,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_iron_8.gif" alt="Image">Železo za 8
                         </td>
@@ -404,7 +426,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/mine_iron.gif" alt="Image">Pila na železný důl
                         </td>
@@ -415,7 +437,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trziste_10000.gif" alt="Image">Tržiště +10K
                         </td>
@@ -426,7 +448,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/researchcredit_1.gif" alt="Image">Placený výzkum I.
                         </td>
@@ -437,7 +459,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/pila.gif" alt="Image">Pila IV.
                         </td>
@@ -448,7 +470,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/repair_1.gif" alt="Image">Opraváři I.
                         </td>
@@ -459,7 +481,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_food_8.gif" alt="Image">Jídlo za 8
                         </td>
@@ -470,7 +492,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_iron_10.gif" alt="Image">Železo za 10
                         </td>
@@ -481,7 +503,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/pevnejsi_strechy.gif" alt="Image">Pevnější střechy
                         </td>
@@ -492,7 +514,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/delo1.gif" alt="Image">Dělo I.
                         </td>
@@ -503,7 +525,18 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/cat_aim_1.gif" alt="Image">Přesný katapult I.
+                        </td>
+                        <td class="odhaleni">20.000</td>
+                        <td class="vyzkum">100.000</td>
+                        <td class="zaklad">Zvýší přesnost veškerých střel katapultu o 30%.</td>
+                        <td class="zaklad">
+                            <span class=""></span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_stone_8.gif" alt="Image">Kámen za 8
                         </td>
@@ -514,7 +547,18 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/templar.gif" alt="Image">Bílý templář
+                        </td>
+                        <td class="odhaleni">24.000</td>
+                        <td class="vyzkum">120.000</td>
+                        <td class="zaklad">V kostele jde verbovat také templář. Má schopnost přidat obranu +7, a také schopnost uzdravovat jednotky. Je silnější než šermíř, ale narozdíl od ostatních šermířů se neumí rozzuřit.</td>
+                        <td class="zaklad">
+                            <span class=""></span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/cat_range_1.gif" alt="Image">Dostřel katapultů I.
                         </td>
@@ -525,7 +569,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_iron_8.gif" alt="Image">Železo za 8
                         </td>
@@ -536,7 +580,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/vykrm_prasat.gif" alt="Image">Výkrm prasat
                         </td>
@@ -547,7 +591,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/lecitel_5H.gif" alt="Image">Léčitel +5H
                         </td>
@@ -558,7 +602,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_food_6.gif" alt="Image">Jídlo za 6
                         </td>
@@ -569,7 +613,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_wood_6.gif" alt="Image">Dřevo za 6
                         </td>
@@ -580,7 +624,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/maruska.gif" alt="Image">Maruška ze statku
                         </td>
@@ -591,7 +635,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/studna_3.gif" alt="Image">Studna level 3
                         </td>
@@ -602,7 +646,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trap_1.gif" alt="Image">Past
                         </td>
@@ -613,7 +657,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/cat_aim_2.gif" alt="Image">Přesný katapult II.
                         </td>
@@ -624,7 +668,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_stone_6.gif" alt="Image">Kámen za 6
                         </td>
@@ -635,7 +679,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_iron_6.gif" alt="Image">Železo za 6
                         </td>
@@ -646,7 +690,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/researchcredit_2.gif" alt="Image">Placený výzkum II.
                         </td>
@@ -657,7 +701,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/ocelova_koule.gif" alt="Image">Ocelová koule
                         </td>
@@ -668,7 +712,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sermir_cerveny.gif" alt="Image">Červený šermíř
                         </td>
@@ -695,15 +739,15 @@
             <div class="table-section">
                 <h2 id="univerzita-level-3" class="nadpis-univerzita">UNIVERZITA LEVEL 3</h2>
 
-                <table width="1480" align="center" class="filterable-table">
-                    <tr bgcolor="grey" style="border: 1.5px solid white;">
+                <table class="filterable-table">
+                    <tr class="table-header">
                         <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
                         <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
                         <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
                         <th width="830" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
                         <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/dul_na_zelezo.gif" alt="Image">Železný důl IV.
                         </td>
@@ -714,7 +758,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_wood_6.gif" alt="Image">Dřevo za 6
                         </td>
@@ -725,7 +769,18 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/studna_3.gif" alt="Image">Studna level 3
+                        </td>
+                        <td class="odhaleni">40.000</td>
+                        <td class="vyzkum">200.000</td>
+                        <td class="zaklad">Studnu je možné vylepšit na speciální 3. level, takže zajistí vodu pro 18 obyvatel.</td>
+                        <td class="zaklad">
+                            <span class=""></span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/dum_9.gif" alt="Image">Dům level 9
                         </td>
@@ -736,7 +791,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trap_1.gif" alt="Image">Past
                         </td>
@@ -747,7 +802,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_stone_6.gif" alt="Image">Kámen za 6
                         </td>
@@ -758,7 +813,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/buy_iron_6.gif" alt="Image">Železo za 6
                         </td>
@@ -769,7 +824,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/templar2.gif" alt="Image">Dva templáři
                         </td>
@@ -780,7 +835,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sermir_3.gif" alt="Image">Šermíř +3H
                         </td>
@@ -791,7 +846,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sell_food_12.gif" alt="Image">Jídlo za 12
                         </td>
@@ -802,7 +857,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/ohniva_strela.gif" alt="Image">Ohnivá střela
                         </td>
@@ -813,7 +868,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/fa_3.gif" alt="Image">Statek III.
                         </td>
@@ -824,7 +879,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/farm.gif" alt="Image">Pila na farmu
                         </td>
@@ -835,7 +890,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/uplaceni_3.gif" alt="Image">Úplatkář III.
                         </td>
@@ -846,7 +901,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/zbrojnos_modry.gif" alt="Image">Modrý zbrojnoš
                         </td>
@@ -857,7 +912,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/devecka.gif" alt="Image">Děvečka ze statku
                         </td>
@@ -868,7 +923,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/strelec_modry.gif" alt="Image">Modrý střelec
                         </td>
@@ -879,7 +934,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/uplaceni_4.gif" alt="Image">Úplatkář IV.
                         </td>
@@ -890,7 +945,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/cat_2x.gif" alt="Image">Dva katapulty
                         </td>
@@ -917,15 +972,15 @@
             <div class="table-section">
                 <h2 id="univerzita-level-4" class="nadpis-univerzita">UNIVERZITA LEVEL 4</h2>
 
-                <table width="1480" align="center" class="filterable-table">
-                    <tr bgcolor="grey" style="border: 1.5px solid white;">
+                <table class="filterable-table">
+                    <tr class="table-header">
                         <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
                         <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
                         <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
                         <th width="830" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
                         <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/delo2.gif" alt="Image">Dělo II.
                         </td>
@@ -936,7 +991,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/druid.gif" alt="Image">Druid
                         </td>
@@ -947,7 +1002,18 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
+                        <td class="zakladmale">
+                            <img src="Images UNI/templar2.gif" alt="Image">Dva templáři
+                        </td>
+                        <td class="odhaleni">48.000</td>
+                        <td class="vyzkum">240.000</td>
+                        <td class="zaklad">V kostele jdou verbovat dva templáři - zaberou místo jako jeden. Mají schopnost přidat obranu +7, a také schopnost uzdravovat jednotky. Jsou silnější než šermíř, ale narozdíl od ostatních šermířů se neumí rozzuřit.</td>
+                        <td class="zaklad">
+                            <span class=""></span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/portalek_ze.gif" alt="Image">Portálek zelený
                         </td>
@@ -958,7 +1024,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trziste_50000.gif" alt="Image">Tržiště +50K
                         </td>
@@ -969,7 +1035,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trziste_100000.gif" alt="Image">Tržiště +100K
                         </td>
@@ -980,7 +1046,7 @@
                             <span class="badge trziste">Tržiště a suroviny</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/fa_3.gif" alt="Image">Statek III.
                         </td>
@@ -991,7 +1057,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/zbrojnos_5.gif" alt="Image">Zbrojnoš +5H
                         </td>
@@ -1002,7 +1068,7 @@
                             <span class="badge jednotky">Jednotky a vlastnosti</span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sermir_cerveny.gif" alt="Image">Červený šermíř
                         </td>
@@ -1013,7 +1079,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/velka_fara.gif" alt="Image">Velká fara
                         </td>
@@ -1024,7 +1090,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/devecka.gif" alt="Image">Děvečka ze statku
                         </td>
@@ -1035,7 +1101,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/strelec_modry.gif" alt="Image">Modrý střelec
                         </td>
@@ -1046,7 +1112,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/trap_2.gif" alt="Image">Past - zasouvací
                         </td>
@@ -1057,7 +1123,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/sermiri_dvojcata.gif" alt="Image">Šermíři dvojčata
                         </td>
@@ -1084,15 +1150,15 @@
             <div class="table-section">
                 <h2 id="univerzita-level-5" class="nadpis-univerzita">UNIVERZITA LEVEL 5</h2>
 
-                <table width="1480" align="center" class="filterable-table">
-                    <tr bgcolor="grey" style="border: 1.5px solid white;">
+                <table class="filterable-table">
+                    <tr class="table-header">
                         <th width="100" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VYNÁLEZ</th>
                         <th width="125" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ODHALENÍ</th>
                         <th width="175" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">VÝZKUM</th>
                         <th width="830" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">ÚČINEK</th>
                         <th width="350" height="40" style="color:rgb(255, 255, 255); border: 1.5px solid white;">KATEGORIE</th>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/delo3.gif" alt="Image">Dělo III.
                         </td>
@@ -1103,7 +1169,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/portalek_ze.gif" alt="Image">Portálek zelený
                         </td>
@@ -1114,7 +1180,7 @@
                             <span class=""></span>
                         </td>
                     </tr>
-                    <tr align="center" style="border: 1px solid gray;">
+                    <tr>
                         <td class="zakladmale">
                             <img src="Images UNI/fara_u_kostela.gif" alt="Image">Fara u kostela
                         </td>

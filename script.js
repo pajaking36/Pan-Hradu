@@ -142,7 +142,7 @@ function filterAllTables() {
         const tlacitko = document.getElementById('button-uni-back-1');
         
         // 2. Najdeme cílovou sekci podle jejího ID
-        const cilovaSekce = document.getElementById('univerzita');
+        const cilovaSekce = document.getElementById('uni-back');
 
         // 3. Přidáme funkci, která se spustí při kliknutí
         if (tlacitko && cilovaSekce) {
@@ -162,7 +162,7 @@ function filterAllTables() {
         const tlacitko = document.getElementById('button-uni-back-2');
         
         // 2. Najdeme cílovou sekci podle jejího ID
-        const cilovaSekce = document.getElementById('univerzita');
+        const cilovaSekce = document.getElementById('uni-back');
 
         // 3. Přidáme funkci, která se spustí při kliknutí
         if (tlacitko && cilovaSekce) {
@@ -182,7 +182,7 @@ function filterAllTables() {
         const tlacitko = document.getElementById('button-uni-back-3');
         
         // 2. Najdeme cílovou sekci podle jejího ID
-        const cilovaSekce = document.getElementById('univerzita');
+        const cilovaSekce = document.getElementById('uni-back');
 
         // 3. Přidáme funkci, která se spustí při kliknutí
         if (tlacitko && cilovaSekce) {
@@ -202,7 +202,7 @@ function filterAllTables() {
         const tlacitko = document.getElementById('button-uni-back-4');
         
         // 2. Najdeme cílovou sekci podle jejího ID
-        const cilovaSekce = document.getElementById('univerzita');
+        const cilovaSekce = document.getElementById('uni-back');
 
         // 3. Přidáme funkci, která se spustí při kliknutí
         if (tlacitko && cilovaSekce) {
@@ -222,7 +222,7 @@ function filterAllTables() {
         const tlacitko = document.getElementById('button-uni-back-5');
         
         // 2. Najdeme cílovou sekci podle jejího ID
-        const cilovaSekce = document.getElementById('univerzita');
+        const cilovaSekce = document.getElementById('uni-back');
 
         // 3. Přidáme funkci, která se spustí při kliknutí
         if (tlacitko && cilovaSekce) {
