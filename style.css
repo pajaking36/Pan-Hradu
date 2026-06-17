@@ -3,22 +3,41 @@ body{
 }
 p {
     display: block;
-    width: 1450px;
+    width: 1350px;
     margin-left: auto;
-    margin-right: auto; 
-    font-size: 20px;
+    margin-right: auto;
+    font-family:verdana;
+    font-size: 15px;
     color: rgb(200, 200, 200);
+}
+img{
+    width: 58px;
+    height: 46px;
 }
 .container {
     max-width: 1480px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
     margin: 0 auto;    /* Vycentruje celý blok na střed stránky */
     padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
 }
+.container-bigger {
+    max-width: 1480px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
+    margin: 0 auto;    /* Vycentruje celý blok na střed stránky */
+    padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
+}
+.container-smaller {
+    max-width: 1350px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
+    margin: 0 auto;    /* Vycentruje celý blok na střed stránky */
+    padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
+}
 .button-container-right {
+    max-width: 1350px;
+    margin: auto;
     display: flex;
     justify-content: flex-end; /* Pushes the button to the right */
 }
 .button-container-left {
+    max-width: 1350px;
+    margin: auto;
     display: flex;
     justify-content: flex-start; /* Pushes the button to the left */
 }
@@ -69,17 +88,17 @@ table, th, td {
     border-collapse: collapse;
     font-family:verdana;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
 }
 table {
-    width: 1480px;
+    width: 1350px;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(180, 200, 180, 0.1); /* Optional: adds a subtle shadow for better aesthetics */
 }
 td {
-    height:100px;
+    height:68px;
 }
 .table-header {
     border: 1.5px solid white;
@@ -91,7 +110,7 @@ tr:hover {
 .odhaleni { color:rgb(235, 160, 160); }
 .vyzkum { color:rgb(160, 235, 160); }
 .zaklad { color:rgb(200, 200, 200); }
-.zakladmale { color:rgb(200, 200, 200); font-size: 13px;
+.zakladmale { color:rgb(200, 200, 200); font-size: 12px;
 }
 section{
     margin-bottom: 100px;
