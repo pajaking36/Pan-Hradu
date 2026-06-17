@@ -3,7 +3,7 @@ body{
 }
 p {
     display: block;
-    width: 1350px;
+    width: 1300px;
     margin-left: auto;
     margin-right: auto;
     font-family:verdana;
@@ -25,18 +25,18 @@ img{
     padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
 }
 .container-smaller {
-    max-width: 1350px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
+    max-width: 1300px; /* Nastavte stejnou šířku, jakou má vaše tabulka */
     margin: 0 auto;    /* Vycentruje celý blok na střed stránky */
     padding: 0 20px;   /* Drobný vnitřní okraj, aby se text nelepil na kraje obrazovky */ 
 }
 .button-container-right {
-    max-width: 1350px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     justify-content: flex-end; /* Pushes the button to the right */
 }
 .button-container-left {
-    max-width: 1350px;
+    max-width: 1300px;
     margin: auto;
     display: flex;
     justify-content: flex-start; /* Pushes the button to the left */
@@ -93,7 +93,7 @@ table, th, td {
     padding-right: 10px;
 }
 table {
-    width: 1350px;
+    width: 1300px;
     margin: 0 auto;
     box-shadow: 0 0 20px rgba(180, 200, 180, 0.1); /* Optional: adds a subtle shadow for better aesthetics */
 }
@@ -139,6 +139,8 @@ section{
     border-radius: 4px;
     margin-left: 14px;
     margin-right: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
     cursor: pointer;
 }
 .button-uni-lvl:hover {
