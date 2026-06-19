@@ -1,4 +1,13 @@
 
+// Navigatin bar scripts
+function showsidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+}
+function hidesidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+}
 
 // Script for filtering all tables
 function filterAllTables() {
