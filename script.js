@@ -43,6 +43,43 @@ function filterAllTables() {
     });
 }
 
+// Script for sorting all tables
+function sortAllTables() {
+    const sortValue = document.getElementById("sortSelect").value;
+    if (!sortValue) return; // Do nothing if default option is picked
+
+    // Split the combined value into column index and direction order
+    const [colIndexStr, order] = sortValue.split("-");
+    const columnIndex = parseInt(colIndexStr);
+
+    const tableBodies = document.querySelectorAll(".filterable-tbody");
+
+    tableBodies.forEach(tableBody => {
+        const rows = Array.from(tableBody.querySelectorAll("tr"));
+
+        rows.sort((rowA, rowB) => {
+            const cellA = rowA.cells[columnIndex].textContent.trim();
+            const cellB = rowB.cells[columnIndex].textContent.trim();
+
+            let comparison = 0;
+
+            // Numeric sorting logic for columns 1 and 2
+            if (columnIndex === 1 || columnIndex === 2) {
+                comparison = parseFloat(cellA) - parseFloat(cellB);
+            } else {
+                // Alphabetical sorting logic for column 0
+                comparison = cellA.localeCompare(cellB);
+            }
+
+            // Invert layout if descending option was chosen
+            return order === "asc" ? comparison : -comparison;
+        });
+
+        // Update the DOM container with new order
+        rows.forEach(row => tableBody.appendChild(row));
+    });
+}
+
 // Script for moving user on website by buttons
     // Počkejte, až se načte celá stránka
     document.addEventListener('DOMContentLoaded', () => {

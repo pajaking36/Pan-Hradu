@@ -212,8 +212,7 @@ tr:hover {
 section{
     margin-bottom: 100px;
 }
-/* Styl pro štítky kategorií */
-.badge {
+.badge {  /* Styl pro štítky kategorií */
     display: inline-block;
     padding: 5px 10px;
     border-radius: 12px;
