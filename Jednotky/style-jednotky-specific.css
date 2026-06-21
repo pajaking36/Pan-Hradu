@@ -76,6 +76,27 @@ nav li:first-child{
 .menu-button{
     display: none;
 }
+.stredoveky {
+    font-family: 'MojeAeiou', serif;
+    font-size: 26px;               /* Upravte velikost podle potřeby */
+    vertical-align: middle;        /* Zarovná text na střed vedle loga */
+    display: inline-flex;          /* Pomůže s lepším zarovnáním s obrázkem */
+    align-items: center;           /* Vertikálně vycentruje text i ikonu uvnitř odkazu */
+}
+@font-face {
+    font-family: 'MojeXenippa';
+    /* Cesta do složky fonts */
+    src: url('../Resources/fonts/xenippa1.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MojeAeiou';
+    /* Cesta do složky fonts */
+    src: url('../Resources/fonts/_aeiou2U.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
 @media(max-width: 800px){
     .hideonmobile{
         display: none;
