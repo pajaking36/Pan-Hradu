@@ -19,7 +19,6 @@ p {
     padding: 14px;
     line-height: 1.6;
 }
-
 /* navigation bar settings */
 nav{
     background-color: rgb(55, 60, 65);
@@ -195,10 +194,15 @@ select {
     margin-bottom: 30px;
     margin-top: 30px;
 }
-.table-section {
-    margin-bottom: 40px;
+
+/* Hlavní tabulka katalogu */
+.main-table {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 80%;
+    box-shadow: 0 0 20px rgba(180, 200, 180, 0.1); /* Optional: adds a subtle shadow for better aesthetics */
 }
-table, th, td {
+.main-table, .main-table th, .main-table td {
     border: 1px solid gray;
     border-collapse: collapse;
     font-family:verdana;
@@ -207,25 +211,34 @@ table, th, td {
     padding-left: 10px;
     padding-right: 10px;
 }
-table {
-    width: 1000px;
-    margin: 0 auto;
-    box-shadow: 0 0 20px rgba(180, 200, 180, 0.1); /* Optional: adds a subtle shadow for better aesthetics */
+.main-table th {
+    border: 1.5px solid white;
 }
-td {
-    height:68px;
+.main-table td {
+    height: 68px;
 }
 .table-header {
     border: 1.5px solid white;
 }
-tr:hover {
+.main-table tr:hover {
     background-color: rgb(50, 55, 60);
     transition: background-color 0.05s ease; /* Makes the highlight smooth */
+}
+.item-info {
+    align-items: center;
+    gap: 15px;
+}
+.energie { color:rgb(140, 180, 220); }
+.zdravi { color:rgb(228, 120, 120); }
+.bonus { color:rgb(140, 140, 220); }
+.staty { color:rgb(230, 230, 230); }
+.zaklad { color:rgb(200, 200, 200); }
+.zakladmale { color:rgb(200, 200, 200); font-size: 12px;
 }
 .odhaleni { color:rgb(235, 160, 160); }
 .vyzkum { color:rgb(160, 235, 160); }
 .zaklad { color:rgb(200, 200, 200); }
-.zakladmale { color:rgb(200, 200, 200); font-size: 12px;
+.zakladmale { color:rgb(200, 200, 200); font-size: 12px!important;
 }
 section{
     margin-bottom: 100px;
@@ -271,11 +284,194 @@ section{
     background-color: rgb(230, 230, 0);
     transition: background-color 0.2s ease; /* Makes the highlight smooth */
 }
-.ikona{
+.item-img {
     width: 40px;
     height: 38px;
+    cursor: pointer;
+}
+.item-img:hover {
+    transform: scale(1.05);
+    border-color: #ff4500;
 }
 .ikona-text{
     width: 18px;
     height: 9px;
+}
+
+/* Velké herní vyskakovací okno */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 35, 40, 0.8);
+    overflow-y: auto;
+}
+
+.modal-content {
+    background-color: rgba(30, 35, 40);
+    margin: 2% auto;
+    padding: 30px;
+    border: 1px solid #2a2a2a;
+    width: 95%;
+    max-width: 900px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+/* Centrování hlavičky */
+.modal-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#modal-image {
+    width: auto;
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#modal-title {
+    font-family:verdana;
+    margin: 5px 0;
+    color: rgb(200, 200, 0);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Nadpisy sekcí (SCHOPNOSTI, DODATEČNÉ INFO) */
+.section-title {
+    font-family:verdana;
+    color: rgb(200, 200, 0);
+    text-align: center;
+    font-size: 22px;
+    margin: 30px 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* 1. BLOK: Dvousloupcová tabulka statistik */
+.stats-grid-table {
+    font-family:verdana;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(20, 20, 25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.stats-grid-table td {
+    font-family:verdana;
+    padding: 5px 20px;
+    border: none;
+    font-size: 15px;
+    width: 25%; /* Rovnoměrné rozdělení na 4 sloupce */
+}
+
+/* Prodloužení vrchu a spodku tabulky */
+.stats-grid-table tbody tr:first-child td {
+    padding-top: 30px;
+}
+
+.stats-grid-table tbody tr:last-child td {
+    padding-bottom: 30px;
+}
+
+/* Nastavení zarovnání hodnot doprava v rámci sloupců */
+.stats-grid-table td:nth-child(2),
+.stats-grid-table td:nth-child(4) {
+    text-align: center;
+    color:rgb(230, 230, 230);
+}
+
+.stats-grid-table td:nth-child(1),
+.stats-grid-table td:nth-child(3) {
+    text-align: center;
+    color:rgb(200, 200, 200);
+}
+
+/* 2. BLOK: Tabulka schopností */
+.skills-table {
+    font-family: verdana;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(20, 20, 25);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills-table td {
+    padding: 15px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.skills-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Sloupec s ikonou/hodnotou */
+.skill-cost-cell {
+    text-align: end;
+    width: 15%;
+    color:rgb(140, 180, 220);
+}
+
+/* Sloupec s ikonou/hodnotou */
+.skill-icon-cell {
+    width: 5%;
+}
+
+/* Sloupec s názvem schopnosti */
+.skill-name-cell {
+    width: 18%;
+    color:rgb(230, 230, 230);
+}
+
+/* Sloupec s popisem */
+.skill-desc-cell {
+    width: 62%;
+    color:rgb(200, 200, 200);
+    line-height: 1.4;
+}
+
+/* 3. BLOK: Celoplošný box pro dodatečné info */
+.extra-info-box {
+    font-family: verdana;
+    background-color: rgb(20, 20, 25);
+    padding: 20px;
+    font-size: 14px;
+    color:rgb(200, 200, 200);
+    line-height: 1.6;
+    border-radius: 2px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Spodní žluté tlačítko Zpět */
+.close-btn-container {
+    text-align: right;
+    margin-top: 25px;
+}
+
+.close-btn {
+    background-color:rgb(200, 200, 0);
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: rgb(230, 230, 0);
+    transition: background-color 0.2s ease; /* Makes the highlight smooth */
 }
