@@ -112,8 +112,8 @@ const items = [
         name: "Zbrojnoš",
         image: "Jednotky/Images Jednotky/icm_6.png", // Obrázek v TABULCE JEDNOTEK
         gif: "Jednotky/Images Jednotky gifs/zb_3_3.gif", // Gif ve vyskakovacím okně
-        hodnost0: "",
-        hodnost9: "",
+        hodnost0: "-",
+        hodnost9: "-",
         kategorie: "<span class='badge lide'>Lidé</span>",
         stats: {
             energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
@@ -163,8 +163,8 @@ const items = [
         name: "Zbrojnoš Zelenáč",
         image: "Jednotky/Images Jednotky/icm_8.png", // Obrázek v TABULCE JEDNOTEK
         gif: "Jednotky/Images Jednotky gifs/zbz_3_3.gif", // Gif ve vyskakovacím okně
-        hodnost0: "",
-        hodnost9: "",
+        hodnost0: "-",
+        hodnost9: "-",
         kategorie: "<span class='badge lide'>Lidé</span>",
         stats: {
             energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
@@ -188,8 +188,8 @@ const items = [
         name: "Zbrojnoš Černý Toulavý",
         image: "Jednotky/Images Jednotky/icm_9.png", // Obrázek v TABULCE JEDNOTEK
         gif: "Jednotky/Images Jednotky gifs/zbc_3_3.gif", // Gif ve vyskakovacím okně
-        hodnost0: "",
-        hodnost9: "",
+        hodnost0: "-",
+        hodnost9: "-",
         kategorie: "",
         stats: {
             energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
