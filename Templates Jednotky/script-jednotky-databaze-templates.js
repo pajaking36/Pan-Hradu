@@ -1,4 +1,4 @@
-// Ukázková herní data
+// Data na tabulky
 const items = [
     {
         // ZAKLAD
