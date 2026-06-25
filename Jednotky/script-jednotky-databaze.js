@@ -233,7 +233,7 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>xxx&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-        { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
+            { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
         ],
         dodatecneInfo: "POZOR: Nejedná se o klasického Černého Rytíře."
     },
@@ -243,7 +243,7 @@ const items = [
         gif: "Jednotky/Images Jednotky gifs/bk_3_3.gif", // Gif ve vyskakovacím okně
         hodnost0: "-",
         hodnost9: "-",
-        kategorie: "",
+        kategorie: "<span class='badge bratrstvo'>Černé bratrstvo</span>",
         stats: {
             energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
             zdravi: "<span class='zdravi'>4500&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
@@ -259,7 +259,7 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-        { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
+            { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
         ],
         dodatecneInfo: "POZOR: Nejedná se o černého rytíře, ale o Černé Krále. Jsou si velice podobní, ale mají trochu odlišné staty. Černého krále můžete najít např. na mapách ZD6 nebo KÚ Hrad Černého Bratrstva a Záchrana Kostela."
     },
@@ -919,10 +919,10 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 5 <img class='ikona' src='Jednotky/Images/m2.gif'> na 110 minut." },
-            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na 110 minut." },
-            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 110 minut." },
-            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 110 minut." },
+            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 5 <img class='ikona' src='Jednotky/Images/m2.gif'> na 20 minut." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 20 minut." },
+            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +12<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 20 minut." },
         ],
         dodatecneInfo: "Kabo je borec"    
     },
@@ -948,10 +948,10 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 6 <img class='ikona' src='Jednotky/Images/m2.gif'> na 110 minut." },
+            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 6 <img class='ikona' src='Jednotky/Images/m2.gif'> na 20 minut." },
             { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +13<img class='ikona' src='Jednotky/Images/sh.gif'> na 110 minut." },
-            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +13<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 110 minut." },
-            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +13<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 110 minut." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +13<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 20 minut." },
+            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +13<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 20 minut." },
         ],
    
     },
@@ -977,10 +977,10 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 7 <img class='ikona' src='Jednotky/Images/m2.gif'> na 110 minut." },
-            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na 110 minut." },
-            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 110 minut." },
-            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 110 minut." },
+            { cost: "500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_rem.gif'>", name: "Strach", desc: "Sníží jednotce útok o 7 <img class='ikona' src='Jednotky/Images/m2.gif'> na 20 minut." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_2x2.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 20 minut." },
+            { cost: "900&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_add_3x3.gif'>", name: "Chrabrost", desc: "Zvýší obranu o +14<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 3x3 na 20 minut." },
         ],
     
     },
@@ -1037,7 +1037,7 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-        { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky zatím nejsou dodělány. xxx" },
+            { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky zatím nejsou dodělány. xxx" },
         ],
         dodatecneInfo: "Vysává energii a život z okolních jednotek."
     },
@@ -1099,7 +1099,7 @@ const items = [
         gif: "Jednotky/Images Jednotky gifs/dvc_3_3.gif", // Gif ve vyskakovacím okně
         hodnost0: "-",
         hodnost9: "-",
-        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        kategorie: "<span class='badge zvirata'>Zvířata</span><span class='badge bratrstvo'>Černé bratrstvo</span>",
         stats: {
             energie: "<span class='energie'>1300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
             zdravi: "<span class='zdravi'>350&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
@@ -1229,7 +1229,7 @@ const items = [
         gif: "Jednotky/Images Jednotky gifs/dmc_3_3.gif", // Gif ve vyskakovacím okně
         hodnost0: "-",
         hodnost9: "-",
-        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        kategorie: "<span class='badge zvirata'>Zvířata</span><span class='badge bratrstvo'>Černé bratrstvo</span>",
         stats: {
             energie: "<span class='energie'>1200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
             zdravi: "<span class='zdravi'>200&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
@@ -1351,7 +1351,7 @@ const items = [
         },
         schopnosti: [
             { cost: "",icon: "<img src='Jednotky/Images/b_attack_add.gif'>", name: "Trpasličí pivo", desc: "Zvýší útok o +4 <img class='ikona' src='Jednotky/Images/m2.gif'> sám sobě na 20 minut. Cooldown: 2 hodiny." },
-            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem.gif'>", name: "Válečný řev", desc: "Sníží jednotce obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },    
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem.gif'>", name: "Válečný řev", desc: "Sníží jednotce obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },
         ],
 
     },
@@ -1804,7 +1804,7 @@ const items = [
         gif: "Jednotky/Images Jednotky gifs/drce_3_3.gif", // Gif ve vyskakovacím okně
         hodnost0: "-",
         hodnost9: "-",
-        kategorie: "<span class='badge draci'>Draci</span>",
+        kategorie: "<span class='badge draci'>Draci</span><span class='badge bratrstvo'>Černé bratrstvo</span>",
         stats: {
             energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
             zdravi: "<span class='zdravi'>2000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
@@ -1827,9 +1827,35 @@ const items = [
         dodatecneInfo: "POZOR: Nejedná se o klasického černého dráčka.<br>Střelecké jednotky na něj mají bonus."
     },
     {
-        name: "Elfí vlk",
+        name: "Vlk Elfí",
         image: "Jednotky/Images Jednotky/icm_190.png", // Obrázek v TABULCE JEDNOTEK
         gif: "Jednotky/Images Jednotky gifs/pmze_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span><span class='badge elfove'>Elfové</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>180&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "11&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp6&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "300&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Pes Zrzavý",
+        image: "Jednotky/Images Jednotky/icm_200.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmcv_3_3.gif", // Gif ve vyskakovacím okně
         hodnost0: "-",
         hodnost9: "-",
         kategorie: "<span class='badge zvirata'>Zvířata</span>",
@@ -1849,6 +1875,581 @@ const items = [
         },
         schopnosti: [
             
+        ],
+    
+    },
+    {
+        name: "Velký Pes Zrzavý",
+        image: "Jednotky/Images Jednotky/icm_210.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvcv_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>400&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "24&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp10&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "500&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Pes Strakatý",
+        image: "Jednotky/Images Jednotky/icm_220.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmcs_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>200&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "12&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp7&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "300&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Velký Pes Strakatý",
+        image: "Jednotky/Images Jednotky/icm_230.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvcs_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>420&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "25&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp11&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "500&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlčák",
+        image: "Jednotky/Images Jednotky/icm_240.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmz_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>220&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "13&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp8&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "300&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Velký Vlčák",
+        image: "Jednotky/Images Jednotky/icm_250.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvz_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>440&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "26&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp12&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "500&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlk",
+        image: "Jednotky/Images Jednotky/icm_260.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmh_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>240&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "14&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp8&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vrrk Elfí",
+        image: "Jednotky/Images Jednotky/icm_265.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvze_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span><span class='badge elfove'>Elfové</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>480&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "24&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp10&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>3&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vrrk",
+        image: "Jednotky/Images Jednotky/icm_270.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvh_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>460&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "27&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp13&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlk Šedý",
+        image: "Jednotky/Images Jednotky/icm_280.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pms_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>260&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "15&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp8&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vrrk Šedý",
+        image: "Jednotky/Images Jednotky/icm_290.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvs_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>480&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "28&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp14&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlk Bílý",
+        image: "Jednotky/Images Jednotky/icm_300.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmb_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>280&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "16&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp9&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vrrk Bílý",
+        image: "Jednotky/Images Jednotky/icm_310.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvb_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>500&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "29&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp15&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlk Černý",
+        image: "Jednotky/Images Jednotky/icm_320.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmc_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>300&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "17&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp10&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vrrk Černý",
+        image: "Jednotky/Images Jednotky/icm_330.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvc_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>520&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "30&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp16&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Vlk Pekelný",
+        image: "Jednotky/Images Jednotky/icm_340.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pmrv_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>320&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "18&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp11&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/b_attack_add.gif'>", name: "Pekelná zuřivost", desc: "Zvýší útok o +4 <img class='ikona' src='Jednotky/Images/m2.gif'> sám sobě na 20 minut. Cooldown: 2 hodiny." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem.gif'>", name: "Pekelné vrčení", desc: "Sníží jednotce obranu o 4<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." }, 
+        ],
+    
+    },
+    {
+        name: "Vrrk Pekelný",
+        image: "Jednotky/Images Jednotky/icm_350.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/pvrv_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge zvirata'>Zvířata</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>530&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "31&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp17&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/b_teleport.gif'>", name: "Velký skok", desc: "Umožňuje jednotce opakovaně skákat až 2 pole daleko." },
+            { cost: "",icon: "<img src='Jednotky/Images/b_attack_add.gif'>", name: "Pekelná zuřivost", desc: "Zvýší útok o +7 <img class='ikona' src='Jednotky/Images/m2.gif'> sám sobě na 20 minut. Cooldown: 2 hodiny." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem.gif'>", name: "Pekelné vrčení", desc: "Sníží jednotce obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },           
+        ],
+    
+    },
+    {
+        name: "Obřík Vousáč",
+        image: "Jednotky/Images Jednotky/icm_500.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_vo_m_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "30&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp20&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "2&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "2000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+20&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>3&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Obřík Parádník",
+        image: "Jednotky/Images Jednotky/icm_510.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_pa_m_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1100&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "32&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp22&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "3&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "8&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "2000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+20&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Obr Vousáč",
+        image: "Jednotky/Images Jednotky/icm_520.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_vo_s_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>5000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "40&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp40&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "6&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "16&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "5000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Strašlivý řev", desc: "Sníží obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 20 minut" },             
+        ],
+    
+    },
+    {
+        name: "Obr Parádník",
+        image: "Jednotky/Images Jednotky/icm_530.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_pa_s_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>6000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "42&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp42&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "7&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "18&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "5000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Strašlivý řev", desc: "Sníží obranu o 9<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2 na 20 minut" },             
+        ],
+    
+    },
+    {
+        name: "Veleobr Vousáč",
+        image: "Jednotky/Images Jednotky/icm_540.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_vo_v_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>7000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "50&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp60&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "8&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "20&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "7000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>8&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
+        ],
+    
+    },
+    {
+        name: "Veleobr Parádník",
+        image: "Jednotky/Images Jednotky/icm_550.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/obr_pa_v_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge obri'>Obři</span>",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>8000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "52&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp62&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "9&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "24&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "8000&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>9&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>9&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
         ],
     
     },

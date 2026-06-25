@@ -113,8 +113,14 @@ function filterAllTables() {
 
                     // Numerické řazení pro 2. a 3. sloupec (indexy 1 a 2)
                     if (columnIndex === 1 || columnIndex === 2) {
-                        const valA = cellA === "" ? NaN : parseFloat(cellA);
-                        const valB = cellB === "" ? NaN : parseFloat(cellB);
+                        
+                        // ODSTRANĚNÍ TEČEK (tisíců): "6.000" -> "6000"
+                        // Pokud text obsahuje tečky jako oddělovače tisíců, vymažeme je, aby parseFloat fungoval správně
+                        const cleanA = cellA.replace(/\./g, '');
+                        const cleanB = cellB.replace(/\./g, '');
+
+                        const valA = cellA === "" ? NaN : parseFloat(cleanA);
+                        const valB = cellB === "" ? NaN : parseFloat(cleanB);
 
                         // Pokud jsou obě buňky prázdné, neměníme jejich pozici
                         if (isNaN(valA) && isNaN(valB)) return 0;
