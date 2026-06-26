@@ -22,8 +22,8 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
-            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni se Hrdina rozzuří po dobu 40 minut." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni schopnosti Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni schopnosti se Hrdina rozzuří po dobu 40 minut." },
             { cost: "",icon: "<img src='Jednotky/Images/b-big1.gif'>", name: "Obří Hrdina", desc: "Hrdina se na 60 minut změní na obřího Hrdinu 2x2 pole velkého." }
         ],
     
@@ -50,8 +50,8 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
-            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni se Hrdina rozzuří po dobu 40 minut." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni schopnosti Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni schopnosti se Hrdina rozzuří po dobu 40 minut." },
             { cost: "",icon: "<img src='Jednotky/Images/b-big1.gif'>", name: "Obří Hrdina", desc: "Hrdina se na 60 minut změní na obřího Hrdinu 2x2 pole velkého." }
         ],
         dodatecneInfo: "Bílý hrdina je vylepšení na klasického hrdinu, které lze ve hře koupit za 40&nbsp<img class='ikona' src='Jednotky/Images/credits.gif'> na půl roku. Hrdina se rychleji uzdravuje (+2<img class='ikona' src='Jednotky/Images/hea.gif'>), a má přídavnou kapsu na artefakt. V případě smrti hrdiny je na rozdíl od obyčejného hrdiny šance na ztrátu artefaktu minimální (náhoda je 1 z 10). Artefakty, které nese, budou přeneseny do nové hry, nemusíš tedy stavět 9. level hradu."
@@ -2291,7 +2291,7 @@ const items = [
             bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
         },
         schopnosti: [
-            { cost: "",icon: "<img src='Jednotky/Images/b_teleport.gif'>", name: "Velký skok", desc: "Umožňuje jednotce opakovaně skákat až 2 pole daleko." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_teleport.gif'>", name: "Velký skok", desc: "Umožňuje jednotce opakovaně skákat až 2 pole daleko." },
             { cost: "",icon: "<img src='Jednotky/Images/b_attack_add.gif'>", name: "Pekelná zuřivost", desc: "Zvýší útok o +7 <img class='ikona' src='Jednotky/Images/m2.gif'> sám sobě na 20 minut. Cooldown: 2 hodiny." },
             { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem.gif'>", name: "Pekelné vrčení", desc: "Sníží jednotce obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na 20 minut." },           
         ],
@@ -2452,6 +2452,566 @@ const items = [
             { cost: "",icon: "", name: "", desc: "Shopnosti této jednotky jsou neznámé." },
         ],
     
+    },
+    {
+        name: "Amazonka",
+        image: "Jednotky/Images Jednotky/icm_560.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/vao_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>350&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "14&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp5&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "350&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Jednotka se rozzuří na 20 minut. Cooldown: ?." },
+        ],
+    },
+    {
+        name: "Amazonka Rudá",
+        image: "Jednotky/Images Jednotky/icm_561.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/vac_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>400&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "18&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp6&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "1&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Jednotka se rozzuří na 20 minut. Cooldown: ?." },
+        ],
+    },
+    {
+        name: "Gabriela",
+        image: "Jednotky/Images Jednotky/icm_564.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/vag_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>500&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "22&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp10&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "2&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "500&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Jednotka se rozzuří na 20 minut. Cooldown: ?." },
+        ],
+    },
+    {
+        name: "Xena",
+        image: "Jednotky/Images Jednotky/icm_565.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/vax_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>550&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "24&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp12&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "3&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "3&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "600&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Jednotka se rozzuří na 20 minut. Cooldown: ?." },
+        ],
+    },
+    {
+        name: "Čarodejnice Šedá",
+        image: "Jednotky/Images Jednotky/icm_571.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/bab_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "",
+        stats: {
+            energie: "<span class='energie'>3000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1500&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "15&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp30&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "10&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "30&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "2&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+5&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_curse.gif'>", name: "Prokletí", desc: "Odstraní z jednotky veškerá pozitivní kouzla." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_energy_rem.gif'>", name: "Znehybnění", desc: "Sníží jednotce přírůstek energie o 14<img class='ikona' src='Jednotky/Images/eng.gif'>. Doba záleží na magické síle jednotky." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Uhranutí", desc: "Sníží obranu o 6<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." }, 
+        ],
+
+    },
+    {
+        name: "Čarodejnice Oranžová",
+        image: "Jednotky/Images Jednotky/icm_572.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/baz_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1700&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "20&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp40&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "12&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "40&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "500&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+7&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_curse.gif'>", name: "Prokletí", desc: "Odstraní z jednotky veškerá pozitivní kouzla." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_energy_rem.gif'>", name: "Znehybnění", desc: "Sníží jednotce přírůstek energie o 15<img class='ikona' src='Jednotky/Images/eng.gif'>. Doba záleží na magické síle jednotky." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Uhranutí", desc: "Sníží obranu o 7<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." }, 
+        ],
+
+    },
+    {
+        name: "Čarodejnice Černá",
+        image: "Jednotky/Images Jednotky/icm_573.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/bac_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge bratrstvo'>Černé bratrstvo</span>",
+        stats: {
+            energie: "<span class='energie'>5000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1900&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "25&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp50&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "14&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "50&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "600&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+50&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+9&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>9&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>9&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>9&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_curse.gif'>", name: "Prokletí", desc: "Odstraní z jednotky veškerá pozitivní kouzla." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_energy_rem.gif'>", name: "Znehybnění", desc: "Sníží jednotce přírůstek energie o 16<img class='ikona' src='Jednotky/Images/eng.gif'>. Doba záleží na magické síle jednotky." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Uhranutí", desc: "Sníží obranu o 8<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." }, 
+        ],
+
+    },
+    {
+        name: "Čaroděj",
+        image: "Jednotky/Images Jednotky/icm_581.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/maz_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge hrdinove'>Hrdinové</span><span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>900&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "15&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp15&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "8&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "2&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+32&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/sp.gif'>", name: "Ohnivá koule", desc: "Hrdina umí seslat ohnivou kouli, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "1400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain1.gif'>", name: "Ohnivé kapky", desc: "Hrdina umí seslat ohnivé koule na ploše 2x2, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "2200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain2.gif'>", name: "Ohnivý déšť", desc: "Hrdina umí seslat ohnivé koule na ploše 3x3, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "2600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain3.gif'>", name: "Ohnivé peklo", desc: "Hrdina umí seslat ohnivé koule na ploše 4x4, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-vir3.gif'>", name: "Trojité tornádo", desc: "Na poslední úrovni schopnosti umí Hrdina vyslat najednou 3 tornáda. Ty náhodně cestují po mapě a poškozují jednotky i budovy. Poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem. Pokud je cílem hráčská jednotka, aplikuje se cooldown: 20 sekund." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal.gif'>", name: "Léčení", desc: "Hrdina umí léčit, efekt se zvyšuje s magickou sílou." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal_2x2.gif'>", name: "Léčení", desc: "Hrdina umí léčit na pole 2x2, efekt se zvyšuje s magickou sílou." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal_3x3.gif'>", name: "Léčení", desc: "Hrdina umí léčit na pole 3x3, efekt se zvyšuje s magickou sílou." },
+            { cost: "2000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele1.gif'>", name: "Malý elementál", desc: "Hrdina umí vyvolat modrého džinka na hodnosti 0, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "2500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele2.gif'>", name: "Střední elementál", desc: "Hrdina umí vyvolat modrého džinka na hodnosti 9, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele3.gif'>", name: "Obří elementál", desc: "Hrdina umí vyvolat modrého džina 2x2 na hodnosti 0, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "",icon: "<img src='Jednotky/Images/b_teleport.gif'>", name: "Teleportační skok", desc: "Umožňuje hrdinovi skočit až 4 pole daleko. Cooldown: 4 hodiny." },
+        ],
+
+    },
+    {
+        name: "Čaroděj Bílý",
+        image: "Jednotky/Images Jednotky/icm_582.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/mab_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge hrdinove'>Hrdinové</span><span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>900&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "15&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp15&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "10&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "2&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+32&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/sp.gif'>", name: "Ohnivá koule", desc: "Hrdina umí seslat ohnivou kouli, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "1400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain1.gif'>", name: "Ohnivé kapky", desc: "Hrdina umí seslat ohnivé koule na ploše 2x2, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "2200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain2.gif'>", name: "Ohnivý déšť", desc: "Hrdina umí seslat ohnivé koule na ploše 3x3, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "2600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-rain3.gif'>", name: "Ohnivé peklo", desc: "Hrdina umí seslat ohnivé koule na ploše 4x4, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-vir3.gif'>", name: "Trojité tornádo", desc: "Na poslední úrovni schopnosti umí Hrdina vyslat najednou 3 tornáda. Ty náhodně cestují po mapě a poškozují jednotky i budovy. Poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem. Pokud je cílem hráčská jednotka, aplikuje se cooldown: 20 sekund." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal.gif'>", name: "Léčení", desc: "Hrdina umí léčit, efekt se zvyšuje s magickou sílou." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal_2x2.gif'>", name: "Léčení", desc: "Hrdina umí léčit na pole 2x2, efekt se zvyšuje s magickou sílou." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_heal_3x3.gif'>", name: "Léčení", desc: "Hrdina umí léčit na pole 3x3, efekt se zvyšuje s magickou sílou." },
+            { cost: "2000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele1.gif'>", name: "Malý elementál", desc: "Hrdina umí vyvolat modrého džinka na hodnosti 0, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "2500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele2.gif'>", name: "Střední elementál", desc: "Hrdina umí vyvolat modrého džinka na hodnosti 9, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/s-ele3.gif'>", name: "Obří elementál", desc: "Hrdina umí vyvolat modrého džina 2x2 na hodnosti 0, každou minutu mu ubývají životy, až nakonec zemře." },
+            { cost: "",icon: "<img src='Jednotky/Images/b_teleport.gif'>", name: "Teleportační skok", desc: "Umožňuje hrdinovi skočit až 4 pole daleko. Cooldown: 4 hodiny." },
+        ],
+        dodatecneInfo: "Bílý čaroděj je vylepšení na hrdinu čaroděje, které lze ve hře koupit za 40&nbsp<img class='ikona' src='Jednotky/Images/credits.gif'> na půl roku. Hrdina se rychleji uzdravuje (+2<img class='ikona' src='Jednotky/Images/hea.gif'>), má zvýšenou magickou sílu o +2<img class='ikona' src='Jednotky/Images/spells_ico.gif'>, a má přídavnou kapsu na artefakt. V případě smrti hrdiny je na rozdíl od obyčejného hrdiny šance na ztrátu artefaktu minimální (náhoda je 1 z 10). Artefakty, které nese, budou přeneseny do nové hry, nemusíš tedy stavět 9. level hradu.<br><br>Pouze poslední vyvolaný džin a džinek hrdinovi trénuje zkušenosti <img class='ikona' src='Jednotky/Images/ex.gif'>."
+    },
+    {
+        name: "Čaroděj Černý",
+        image: "Jednotky/Images Jednotky/icm_583.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/mac_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge bratrstvo'>Černé bratrstvo</span>",
+        stats: {
+            energie: "<span class='energie'>4300&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>900&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "20&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp26&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "12&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "6&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "8&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "400&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+40&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+3&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/sp.gif'>", name: "Ohnivá koule", desc: "Jednotka umí seslat ohnivou kouli, poškození se zvyšuje s magickou sílou, a je ovlivněno šťastným zásahem." },
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_curse.gif'>", name: "Prokletí", desc: "Odstraní z jednotky veškerá pozitivní kouzla." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_def_shoot_add_2x2.gif'>", name: "Odklonění střel", desc: "Zvýší obranu proti střelám o +14<img class='ikona' src='Jednotky/Images/sh_shot.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." },
+            { cost: "700&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_defense_rem_2x2.gif'>", name: "Uhranutí", desc: "Sníží obranu o 6<img class='ikona' src='Jednotky/Images/sh.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." },
+            { cost: "400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_magic_shield_add.gif'>", name: "Magický štít", desc: "Sešle magický štít se silou = magická síla + 10 <img class='ikona' src='Jednotky/Images/shield_mag.gif'>. Doba záleží na magické síle jednotky." },
+        ],
+
+    },
+    {
+        name: "Stavitel mistr",
+        image: "Jednotky/Images Jednotky/icm_600.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/bum_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>3600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>460&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "13&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp20&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "5&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "800&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+28&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/kl.gif'>", name: "Stavět", desc: "Jednotka umí stavět a opravovat budovy na mapě." },      
+        ],
+        dodatecneInfo: "Umí stavět kamenné cesty a hradby bez dílny level 3. Umí také stavět běžné a zasouvací pasti bez potřeby výzkumu v univerzitě. Neplatí na něj požadavek hodnosti na stavbu budov u kterých je běžně potřeba hodnost 9 (katapult, portálek, líheň, dělo)."
+    },
+    {
+        name: "Pradlena",
+        image: "Jednotky/Images Jednotky/icm_891.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/selpr_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>2000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>400&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp5&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "200&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+20&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Selka",
+        image: "Jednotky/Images Jednotky/icm_892.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/sel_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>3500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>450&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "7&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp5&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "350&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+        dodatecneInfo: "Pokud stojí na zahrádce či poli, tak významně zvyšuje úrodu. Navíc si část úrody - jídla <img class='ikona' src='Jednotky/Images/food.gif'> sbírá do pytle. Vliv selky na poli se zvyšuje s dobou, kterou na poli stojí, a s její hodností."
+    },
+    {
+        name: "Selka Maruška",
+        image: "Jednotky/Images Jednotky/icm_893.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/selsv_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>3500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>450&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "8&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp6&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "550&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+35&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+        dodatecneInfo: "Pokud stojí na zahrádce či poli, tak významně zvyšuje úrodu. Navíc si část úrody - jídla <img class='ikona' src='Jednotky/Images/food.gif'> sbírá do pytle. Vliv selky na poli se zvyšuje s dobou, kterou na poli stojí, a s její hodností.<br><br>Selka Maruška je o 20% efektivnější než bežná selka."
+    },
+    {
+        name: "Chůva",
+        image: "Jednotky/Images Jednotky/icm_894.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/selch_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>1500&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>300&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp5&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "150&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+15&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Šlechtična",
+        image: "Jednotky/Images Jednotky/icm_901.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/prsl_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>1400&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>200&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp3&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "100&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+20&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+0&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Zlatovláska",
+        image: "Jednotky/Images Jednotky/icm_902.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/przl_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>xxx&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>xxx&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "xxx&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbspxxx&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            obranaStrely: "xxx&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "xxx&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "xxx&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+xxx&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+xxx&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            
+        ],
+    
+    },
+    {
+        name: "Elfí princezna",
+        image: "Jednotky/Images Jednotky/icm_903.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/prel_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge elfove'>Elfové</span>",
+        stats: {
+            energie: "<span class='energie'>1800&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>240&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "8&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp3&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            magickaSila: "1&nbsp<img class='ikona' src='Jednotky/Images/spells_ico.gif'>",
+            obranaStrely: "0&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "1&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "100&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+3&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_bless.gif'>", name: "Požehnání", desc: "Odstraní z jednotky veškerá negativní kouzla." },
+            { cost: "200&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",icon: "<img src='Jednotky/Images/b_attack_add_2x2.gif'>", name: "xxx", desc: "Zvýší útok o +1 <img class='ikona' src='Jednotky/Images/m2.gif'> na ploše 2x2. Doba záleží na magické síle jednotky." },
+        ],
+    
+    },
+    {
+        name: "Hrdinka",
+        image: "Jednotky/Images Jednotky/icm_911.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/hrzl_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge hrdinove'>Hrdinové</span><span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "20&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp20&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            strelbaObrana: "0&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>&nbsp&nbsp4&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "600&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+1&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni schopnosti Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni schopnosti se Hrdina rozzuří po dobu 40 minut." },
+            { cost: "",icon: "<img src='Jednotky/Images/b-big1.gif'>", name: "Obří Hrdina", desc: "Hrdina se na 60 minut změní na obřího Hrdinu 2x2 pole velkého." }
+        ],
+    
+    },
+    {
+        name: "Hrdinka Bílá",
+        image: "Jednotky/Images Jednotky/icm_912.png", // Obrázek v TABULCE JEDNOTEK
+        gif: "Jednotky/Images Jednotky gifs/hrb_3_3.gif", // Gif ve vyskakovacím okně
+        hodnost0: "-",
+        hodnost9: "-",
+        kategorie: "<span class='badge hrdinove'>Hrdinové</span><span class='badge lide'>Lidé</span>",
+        stats: {
+            energie: "<span class='energie'>4000&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            zdravi: "<span class='zdravi'>1000&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            mezera: "",
+            utokObrana: "20&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>&nbsp&nbsp20&nbsp<img class='ikona' src='Jednotky/Images/sh.gif'>",
+            strelbaObrana: "0&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>&nbsp&nbsp4&nbsp<img class='ikona' src='Jednotky/Images/sh_shot.gif'>",
+            budovy: "6&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            uneseSurovin: "600&nbsp<img class='ikona' src='Jednotky/Images/bag.gif'>",
+            prirustekEnergie: "+30&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>",
+            prirustekLeceni: "+2&nbsp<img class='ikona' src='Jednotky/Images/hea.gif'>",
+            bonusLide: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusSkreti: "<span class='bonus'>4&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>",
+            bonusTrpaslici: "<span class='bonus'>0&nbsp<img class='ikona' src='Jednotky/Images/m2.gif'>"
+        },
+        schopnosti: [
+            { cost: "600&nbsp<img class='ikona' src='Jednotky/Images/eng.gif'>", icon: "<img src='Jednotky/Images/s.gif'>", name: "Střelba", desc: "Na poslední úrovni schopnosti Hrdina dostřelí na vzdálenost 3 pole, a má zvýšenou střelbu o +8&nbsp<img class='ikona' src='Jednotky/Images/arrow.gif'>. Musí u sebe ale nést střelecký artefakt." },
+            { cost: "",icon: "<img src='Jednotky/Images/isa.gif'>", name: "Zuření", desc: "Na poslední úrovni schopnosti se Hrdina rozzuří po dobu 40 minut." },
+            { cost: "",icon: "<img src='Jednotky/Images/b-big1.gif'>", name: "Obří Hrdina", desc: "Hrdina se na 60 minut změní na obřího Hrdinu 2x2 pole velkého." }
+        ],
+        dodatecneInfo: "Bílá hrdinka je vylepšení na klasickou hrdinku, které lze ve hře koupit za 40&nbsp<img class='ikona' src='Jednotky/Images/credits.gif'> na půl roku. Hrdinka se rychleji uzdravuje (+2<img class='ikona' src='Jednotky/Images/hea.gif'>), a má přídavnou kapsu na artefakt. V případě smrti hrdinky je na rozdíl od obyčejné hrdinky šance na ztrátu artefaktu minimální (náhoda je 1 z 10). Artefakty, které nese, budou přeneseny do nové hry, nemusíš tedy stavět 9. level hradu."
     },
 
 ];
